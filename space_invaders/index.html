@@ -1,0 +1,256 @@
+<html lang="it">
+	<head>
+		<meta charset="UTF-8">
+		<title>script js</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+
+			/*keyframes*/
+			@keyframes rotate{
+				to{
+					transform: rotate(0deg);
+				}
+
+				from{
+					transform: rotate(360deg);
+				}
+			}
+
+			div#container{
+				width: 500px;
+				height: 500px;
+				margin: auto;
+				position: relative;
+				background-color: grey;
+				border-radius: 8px;
+				box-shadow: 1px 7px 20px #3d3d3d;
+			}
+
+			.enemy{
+				width: 50px;
+				height: 50px;
+				background-image: url('male.png');
+				background-size: contain;
+				position: absolute;
+				background-repeat: no-repeat;
+			}
+
+			#hero{
+				background-image: url('hero.png');
+				background-size: contain;
+				background-repeat: no-repeat;
+				width: 50px;
+				height: 50px;
+				position: absolute;
+			}
+
+			#logo{
+				width: 500px;
+				margin: auto;
+				text-align: center;
+				padding: 20px;
+			}
+			#space_logo{
+				height: 100px;
+				animation-name: rotate;
+				animation-duration: 10s;
+			}
+
+			#shoot_by_hero{
+				width: 50px;
+				height: 50px;
+				background-image: url('laser.png');
+				background-size: conatin;
+				background-repeat: no-repeat;
+				position: absolute;
+			}
+
+			#score{
+				font-size: 30px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div id='logo'><img src='logo.png' alt='logo' id='space_logo'></div>
+		<div><h1 id='score'>Score: </h1></div>
+		<div id='container'></div>
+		<script>
+			function start_music(){
+				let new_start_theme = document.createElement('audio');
+				new_start_theme.src = "suoni/theme.mp3";
+				try{
+					 new_start_theme.play();
+				}
+				catch(DOMException){
+					new error(DOMError);
+				}
+			}
+
+			function main() {
+				start_music();
+				let count = 0;
+				let container = document.getElementById('container'); //container to put  divs
+
+				//create the enemies
+				set_enemies(container);
+				let enemies = document.getElementsByClassName("enemy");
+
+				//create the hero
+				let theHero = set_hero(container);
+				hero_onmove();
+
+				//set enemy move left and right
+				for (let i = 0; i < enemies.length; i ++) {
+					move_div(1, enemies[i], parseInt(enemies[i].style.left));
+				}
+
+				//enemies go down every 10 sec
+				time_out_enemy(enemies);
+			}
+
+
+			function move_div(dx, div_to_move, pos) {
+				let start_pos = pos;
+				var interval = setInterval(function() {
+					div_to_move.style.left = pos + 'px';
+					pos += dx;
+					if(pos == start_pos + 10){
+						clearInterval(interval);
+						move_div(-dx, div_to_move, parseInt(div_to_move.style.left, 10));
+					}
+					else if(pos == start_pos - 10){
+						clearInterval(interval);
+						move_div(-dx, div_to_move, parseInt(div_to_move.style.left, 10));
+					}
+				}, 100);
+			}
+
+
+			function set_enemies(container) {
+				let i = 0;
+				let new_enemy;
+				let offset_x = 0;
+
+				for(i = 0;i < 5; i ++) {
+					new_enemy = document.createElement("div");
+					new_enemy.className = 'enemy';
+					new_enemy.style.left = offset_x + 'px';
+					new_enemy.style.top = "10px";
+					offset_x += 100;
+					container.appendChild(new_enemy);
+				}
+			}
+
+			function set_hero(container){
+				let hero = document.createElement('div');
+				hero.setAttribute('id', "hero");
+				container.appendChild(hero);
+				hero.style.left = 250 + 'px';
+				hero.style.top = 450 + 'px';
+				return hero;
+			}
+
+			var counter = 0;
+			function check_enemy_dead(shoot, container){
+				let enemies = document.getElementsByClassName('enemy');
+				let pos_enemy_x = 0;
+				let pos_enemy_y = 0;
+				let element_score = document.getElementById('score');
+
+				let shoot_pos_y = parseInt(shoot.style.top, 10);
+				let shoot_pos_x = parseInt(shoot.style.left, 10);
+				for (let i = 0; i < enemies.length; i ++) {
+					pos_enemy_x = parseInt(enemies[i].style.left, 10);
+					pos_enemy_y = parseInt(enemies[i].style.top, 10);
+					console.log(pos_enemy_y, pos_enemy_x, "shoot:", shoot_pos_x, shoot_pos_y);
+					if(pos_enemy_y == shoot_pos_y){
+						if(Math.abs((pos_enemy_x - shoot_pos_x)) <= 30){
+							container.removeChild(enemies[i]);
+							counter += Math.floor(Math.random()*505 + 312);
+							element_score.innerHTML = 'Score: ' + counter;
+						}
+					}
+				}
+			}
+
+			function heroShoots(hero){
+				let container = document.getElementById('container');
+				let shoot = document.createElement('div');
+				shoot.id = 'shoot_by_hero';
+				shoot.style.left = (parseInt(hero.style.left, 10) - 25) + 'px';
+				shoot.style.top = (parseInt(hero.style.top, 10) - 35) + 'px';
+				container.appendChild(shoot);
+
+				//move shoots
+				let shoot_interval = setInterval(function(){
+					check_enemy_dead(shoot, container);
+					let shot_pos = parseInt(shoot.style.top, 10);
+					if(shot_pos < 0){
+						container.removeChild(shoot);
+						clearInterval(shoot_interval);
+					}
+					shoot.style.top = (shot_pos - 15) + 'px';
+				}, 100.1);
+			}
+
+			function hero_onmove(keypress){
+				let hero = document.getElementById('hero');
+				let pos_hero = parseInt(hero.style.left);
+				if(39 == keypress){
+					hero.style.left = (pos_hero + 50) + 'px';
+				} //right
+
+				if(37 == keypress){
+					hero.style.left = (pos_hero - 50) + 'px';
+				} //left
+
+				if(38 == keypress){
+					heroShoots(hero);
+				}
+			}
+
+			function check_hero(){
+				let hero = document.getElementById('hero');
+				let pos_hero = parseInt(hero.style.left);
+				if(pos_hero <= 5){
+					hero.style.left = "0px";
+				}
+				if(pos_hero >= 445){
+					hero.style.left = "445px";
+				}
+			}
+
+			function end_game(){
+				console.log('hai perso');
+				//TODO write content cause of the lose
+				//reset and start a new game
+			}
+
+			function time_out_enemy(enemies){
+				let offset_down = 10; //0 set for dbug
+				let start_pos = 0;
+				let interval_down = setInterval(function(){
+					for(i = 0;i < enemies.length; i ++){
+						start_pos = parseInt(enemies[i].style.top, 10);
+						if(start_pos == 450){
+								end_game();
+								clearInterval(interval_down);
+						}
+						enemies[i].style.top = (start_pos + offset_down) + 'px';
+					}
+				}, 3000);
+			}
+
+			//main function
+			main();
+
+			//may the force be with you hero (it movessss)
+			document.body.onkeydown = function(e){
+					hero_onmove(e.keyCode);
+				check_hero();
+
+			};
+		</script>
+	</body>
+</html>
