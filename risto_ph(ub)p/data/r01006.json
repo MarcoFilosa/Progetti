@@ -1,0 +1,151 @@
+{
+    "nome": "Ristorante Pizzeria Al Bagnino",
+    "id": "01006",
+    "voto": "4",
+    "cucina": ["italiana","pizza","pesce","mediterranea"],
+    "indirizzo": "Via Lungomare Marin 8, Lignano Sabbiadoro, Italy",
+    "tel": "+39 06 54542210",
+    "thumb": "img/r01006_th.png",
+    "foto": ["img/r01006_1.jpg","img/r01006_2.jpg","img/r01006_3.jpg"],
+    "rev": [{
+        "user": "Geraldo P",
+        "titolo": "Carino...",
+        "note": "ristorante carino con vista sul mare. Personale gentile e disponibile. Prezzi onesti in media ( vino casa, antipasto un primo o secondo caffè amaro 35 euro). Nota negativa lo spaghetto alle vongole molto salato e con scuse del cameriere ci ha offerto qualche frittura in più e amari.",
+        "voto": "3",
+        "data": "11/10/2017"
+    },{
+        "user": "Buona-rovigo",
+        "titolo": "Sul mare",
+        "note": "Ristornate nella media. Bella la posizione in riva al mare a ridosso del passaggio pedonale. Servizio veloce e personale cordiale",
+        "voto": "4",
+        "data": "1/06/2015"        
+    },{
+        "user": "Utente243",
+        "titolo": "Buono!",
+        "note": "Esteticamente molto carino, di fronte al mare. Abbiamo ordinato principalmente pesce e siamo rimaste soddisfatte. Personale cordiale.",
+        "voto": "4",
+        "data": "11/04/2017"        
+    },{
+        "user": "Utente243",
+        "titolo": "Un altro compleanno",
+        "note": "Che dire tutto perfetto. Personale cortese e disponibile. Alla fine del pranzo ci hanno offerto pure limoncello e liquirizia a tutti. Ci ritorneremo presto come sempre. Complimenti al pizzaiolo Pino, pizze veramente buone.",
+        "voto": "4",
+        "data": "12/04/2017"  
+    },{
+        "user": "koli_j12",
+        "titolo": "'bravi e basta '",
+        "note": "Passeggiando sul lungo mare con la mia ragazza abbiamo deciso di fermarci per il pranzo, appena entrati siamo stati accolti dal camerieri il quale e stato molto gentile nell'accogliercia farci accomodare.Abbiamo deciso di mangiare un cuore di burrata in due e dei scialatielli fatti in casa con melanzane e provola.Professionalità, cortesia e buon cibo,tutto questo al Bagnino.Complimenti. ",
+        "voto": "5",
+        "data": "13/04/2017"  
+    },{
+        "user": "Criticon",
+        "titolo": "Servizio Lento",
+        "note": "sono stato qui a fine luglio e sebbene non ci fosse molta gente sono stato servito in tempi lunghissimi e maleducatamente. il mangiare mediocre.",
+        "voto": "2",
+        "data": "13/04/2017"  
+    },{
+        "user": "Tecla M",
+        "titolo": "OTTIMO PESCE!",
+        "note": "Servizio veloce, personale gentile, posto accogliente,accettano animali. Abbiamo mangiato una buonissima m'pepata di cozze ed un ottimo risotto ai frutti di mare, buona anche la pizza. Bravi!!",
+        "voto": "5",
+        "data": "4/11/2017"        
+    },{
+        "user": "Tecla M",
+        "titolo": "Pesce ancora PESCE",
+        "note": "Tornato per la seconda volta con la famiglia. Come sempre ottimo pesce e servizio impeccabile. Antipasto, primo e secondo di pesce più che ottimi. Da ritornare.",
+        "voto": "5",
+        "data": "11/04/2017"        
+    },{
+        "user": "Luca C",
+        "titolo": "Ottimo",
+        "note": "Serata torrida a Lignano, quando anche mangiare può essere un peso, invece in questo ristorante, praticamente sul mare, è stato un piacere. Scialatielli con frutti di mare, molto ben cucinati, ottima proporzione tra pasta e frutti di mare. Un piatto veramente gustoso e bello da vedere. Personale cordiale.",
+        "voto": "4.5",
+        "data": "1/11/2015"        
+    },{
+        "user": "Go_gjo1",
+        "titolo": "Bella Sopresa",
+        "note": "Locale adiacente al mare, quindi gode di ottima vista. Molto bello l'interno, meno curato il dehor. Personale estroverso e simpatico. Pietanze di buona qualità e buon rapporto qualità prezzo, consigliato per famiglie",
+        "voto": "4",
+        "data": "11/11/2015"        
+    },{
+        "user": "Vale90cc",
+        "titolo": "Buona la pizza",
+        "note": "Ristorante pizzeria sul lungo mare di Lignano Sabbiadoro. Personale giovane e gentile anche nel caos. Pizza di qualità a prezzi onesti. Consigliato anche se la tranquillità non è il piatto forte...ma siamo al mare...",
+        "voto": "4",
+        "data": "11/11/2015"        
+    },{
+        "user": "Ciao_matt",
+        "titolo": "Grottesco",
+        "note": "Ho ordinato una pizza con le verdure grigliate, non sapendo che nella nuova ricetta avessero inserito le bucce Delle melanzane.. ",
+        "voto": "1",
+        "data": "11/11/2015"        
+    },{
+        "user": "Danile M",
+        "titolo": "Buono",
+        "note": "Locale che si trova lungo il mare. Si mangia molto bene: buon pesce, abbondante e di qualità. Da provare!!!",
+        "voto": "3.5",
+        "data": "24/06/2017"        
+    },{
+        "user": "MArco DD",
+        "titolo": "pizza iper",
+        "note": "sono stato in questo ristorante a pranzo e a cena e abbiamo mangiato sia primi piatti di pesce che pizza .entrambi molto soddisfacenti nella qualità e nella quantità.personale attento e accogliente . prezzo normale e ragionevole.il ristornate si trova a pochi metri dalla spiaggia e dal centro.",
+        "voto": "4",
+        "data": "24/06/2017"        
+    },{
+        "user": "Steafno90x",
+        "titolo": "I risotti!!",
+        "note": "Non è la prima volta che proviamo il menu di questo locale sul lungomare pedonale di Lignano, lontano dalla confusione del centro.Ovviamente non si può fare a meno di provare i piatti a base di pesce, seguendo non solo la carta ma anche i suggerimenti del personale (gentile e professionale).Consiglio di provare il risotto ai frutti di mare: abbondante e buonissimo! mai mangiato uno così ben fatto e ricco.",
+        "voto": "4.5",
+        "data": "25/01/2018"        
+    },{
+        "user": "StellaLuna",
+        "titolo": "Nella media",
+        "note": "posto carino sul mare, parcheggio inesistente, bisogna arrivare a piedi o in bicicletta, personale abbastanza gentile, pietanze buone senza eccedere, listino del bere un pò fuorviante, sufficiente",
+        "voto": "3",
+        "data": "23/01/2018"        
+    },{
+        "user": "Alessandra G",
+        "titolo": "Consigliatissimo",
+        "note": "Personale gentile e disponibile. Servizio velocissimo e impeccabile. Ottima la cucina e i piatti di pesce...porzioni grandi. Rapporto qualità/prezzo impeccabile. E infine panorama da rimanere a bocca aperta....praticamente si mangia sul mare!!In poche parole.....da tornarci sicuramente!!!",
+        "voto": "5",
+        "data": "23/07/2017"        
+    },{
+        "user": "HEllo43",
+        "titolo": "Buona la Prima",
+        "note": "Siamo stati in questo locale per la prima volta con un gruppo di amici che l'avevano già frequentato. ottima l'accoglienza già al momento della prenotazione telefonica, servizio disponibile e veloce, buona la pizza fatta con il lievito madre. Buono il rapporto qualità prezzo . ottima anche la posizione. Conviene prenotare!",
+        "voto": "4",
+        "data": "23/04/2017"        
+    },{
+        "user": "GALeLerga",
+        "titolo": "Pizza in Famiglia",
+        "note": "Pizze buone ne ho mangiate ma questa era super. Inoltre il ristorante si trova sul lungomare. Romantico al massimo. Camerieri cordiali.",
+        "voto": "4",
+        "data": "23/11/2017"        
+    },{
+        "user": "ThaiBoxe",
+        "titolo": "Cena vista mare",
+        "note": "Ci siamo andati dopo aver letto le recensioni che ci hanno convinto e non c'è ne siamo pentiti, locale pulito e ordinato veloci nel trovarci un tavolo e nel servizio. Piatti abbondanti ed ottimi, pesce di qualità. Ne è valsa la pena ad un prezzo ragionevole. Consigliato",
+        "voto": "4",
+        "data": "9/01/2017"        
+    },{
+        "user": "Mattia m.",
+        "titolo": "vicino casa!",
+        "note": "A parte la prenotazione x 2 dimenticata risolta in 5m quindi tutto bene!gli gnocchi agli spinaci e gorgonzola erano buoni così come la mia pizza pugliese!calamari fritti di buona fattura e patate fritte di grosse dimensioni buone!personale tutto molto gentile e accogliente!",
+        "voto": "4",
+        "data": "10/01/2018"        
+    },{
+        "user": "FABIO C",
+        "titolo": "Squisito! E tramonto..",
+        "note": "Gnocchi e scialatielli fatti in casa assolutamente sublimi. Personale cortese e prezzi accessibili. E quello spettacolare tramonto sul mare 'gustato' direttamente dal tavolo...!",
+        "voto": "5",
+        "data": "9/01/2017"        
+    },{
+        "user": "Frien1",
+        "titolo": "Con amici",
+        "note": "Cozze buone e frittura abbondante e asciutta consigliato locale in posizione stupenda vista mare accogliente",
+        "voto": "3",
+        "data": "11/05/2018"        
+    }
+    ]
+    
+}

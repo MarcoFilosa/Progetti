@@ -1,0 +1,31 @@
+{
+    "nome": "Lo Zodiaco",
+    "id": "01004",
+    "voto": "5",
+    "cucina": ["italiana","pesce"],
+    "indirizzo": "Viale Regina Margherita 159 Lungomare di Rimini, Rome, Italy",
+    "tel": "+39 06 64524335",
+    "thumb": "img/r01004_th.png",
+    "foto": ["img/r01004_1.jpg","img/r01004_2.jpg","img/r01004_3.jpg"],
+    "rev": [{
+        "user": "Messerrr",
+        "titolo": "Sul mare...Beautiful",
+        "note": "Un pranzo veloce e decisamente gustoso a Rimini. Personale efficiente e davvero simpatico. Ottima la frittura di pesce. buon rapporto qualità-prezzo.",
+        "voto": "5",
+        "data": "23/04/2015"
+    },{
+        "user": "SaiKenBon",
+        "titolo": "Davvero squisito",
+        "note": "Buon pesce, locale molto alla buona, scegli il pesce sul banco lo cucinano e ti chiamano a ritirarlo quando è pronto. Prezzi onesti",
+        "voto": "4",
+        "data": "3/12/2016"        
+    },{
+        "user": "PappaGiallo",
+        "titolo": "Follemente innamorata di questo locale",
+        "note": "Follemente innamorata di questo locale! Consigliato da un amico è ormai diventata una tappa fissa per pranzi settimanali. Si sceglie il pesce direttamente dal banco, viene cucinato e si è chiamati direttamente dalla cucina quando è pronto. È proprio il caso di dire “come fatto in casa”. Prezzi per quanto mi riguarda addirittura inferiori alla media, considerando anche la zona (piena Moscova) ma assolutamente la qualità ottima!! Per non parlare dei ragazzi, carinissimi!! ",
+        "voto": "5",
+        "data": "11/04/2017"        
+    }
+    ]
+    
+}

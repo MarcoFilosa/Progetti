@@ -1,0 +1,117 @@
+/*header*/
+
+html, body, *{
+    box-sizing: border-box;
+}
+a:hover{
+    text-decoration: none;
+}
+
+body{
+    padding-top: 75px;
+}
+
+.navbar-brand{
+    color: grey;
+    font-size: 30px;
+}
+
+nav#nav_bar{
+    color: grey;
+    background-color: #262626;
+}
+
+/*main page */
+h1#nav_page_title{
+    padding-left: 20px;
+    font-size: 30px;
+}
+
+div.container{
+   border-bottom: 1px solid #E0E0E0;
+   padding: 40px 0px 20px 0px;
+   margin: 0px;
+}
+
+
+ul#menu-main-page{
+    list-style: none;
+    padding-left: 20px;
+}
+
+div.el-container{
+    margin-left: 200px;
+}
+
+img.rate_img{
+    height: 20px;
+}
+p.rest-rew{
+    margin: 0px;
+    font-size: 15px;
+}
+
+div.review-tag{
+    padding-bottom: 3px;
+}
+
+h2.rest-title{
+    font-size: 1.2em;
+}
+
+img#rest-img{
+    float: left;
+}
+p.green{
+    color: green;
+    font-size: 15px;
+     margin: 0px;
+} 
+span.black{
+    color: black;
+}
+
+/* single.php*/
+div.containers-single{
+    padding-top: 20px;
+    padding-left: 15px;
+    border-bottom: 1px solid #E0E0E0;
+    padding-bottom: 20px;
+}
+div#rate-single-page{
+    padding-bottom: 20px;
+}
+
+h1#rest-single-page{
+    padding-top: 20px;
+}
+
+p#green-single{
+    color: green;
+    padding-bottom: 10px;
+}
+
+pre.note_comment{
+    overflow-x: visible;
+}
+
+.p-user-comment{
+    margin: 0px;
+}
+
+h2.comment-title-single{
+    margin: 0px;
+    font-size: 18px;
+}
+
+/*footer section*/
+footer{
+    clear: both;
+    padding-left: 20px;
+}
+.validator{
+    float: right;
+    position: relative;
+    top: -10px;
+       
+}

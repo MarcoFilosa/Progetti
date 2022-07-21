@@ -1,0 +1,31 @@
+{
+    "nome": "I Viziosi - Ristorante/Bistrot",
+    "id": "01005",
+    "voto": "4.5",
+    "cucina": ["italiana","pizza","bistrot","opzioni vegani"],
+    "indirizzo": "Via Isidoro La Lumia, Palermo, Italy",
+    "tel": "+39 06 64546755",
+    "thumb": "img/r01005_th.png",
+    "foto": ["img/r01005_1.jpg","img/r01005_2.jpg","img/r01005_3.jpg"],
+    "rev": [{
+        "user": "Marco ocram",
+        "titolo": "Buonissimo",
+        "note": "locale piccolo e ben curato, una delle migliori pizze di Palermo, abbiamo preso una margherita (è dalla più semplice che si valuta la bontà...) e una Bolognese special (bufala, mortadella, stracciatella, pesto e granella di pistacchi) entrambe pazzesche!! vi raccomando di lasciarvi spazio per la cheescake, fatta in casa è imperdibile!! tortino al cioccolato buono ma non quanto la cheescake.",
+        "voto": "5",
+        "data": "11/01/2016"
+    },{
+        "user": "Tortello_chebello11",
+        "titolo": "Che pizza!",
+        "note": "Pizza sorprendente! Davvero ottima, ho apprezzato la varietà di gusti nel menù, molto buono l'impasto",
+        "voto": "4.5",
+        "data": "5/11/2016"        
+    },{
+        "user": "Utente1123",
+        "titolo": "Posto carino",
+        "note": "Posto piccolo, ma carino.. Personale molto cortese e gentile, patatine fritte fantastiche e pizza di ottimi ingredienti e soprattutto ben lievitata, cosa che si denota dai bordi molto gonfi.. Complimenti, buonissima..",
+        "voto": "4",
+        "data": "11/04/2017"        
+    }
+    ]
+    
+}
