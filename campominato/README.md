@@ -7,3 +7,6 @@ Il sistema tenta di implementare le principali funzioni del gioco:
 - un sistema di rilevamento progresso del gioco (barra di avanzamento); 
 - un sistema di riavvio manuale della partita, a seguito di una sconfitta. 
 
+
+
+![Jul-21-2022 16-11-35](https://user-images.githubusercontent.com/109685724/180234986-ad8383a4-7dfd-4d7c-99a7-878d612d92d6.gif)
