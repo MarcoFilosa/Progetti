@@ -6,7 +6,7 @@ Il programma presenta:
 - Una sezione endpage per navigare nel singolo ristorante: 
       {+} Foto ristorante 
       {+} Commenti sul ristorante
-      {+} comeback al homepage 
+      {+} comeback a homepage 
       
      
 
